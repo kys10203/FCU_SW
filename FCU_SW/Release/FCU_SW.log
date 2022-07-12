@@ -1,0 +1,23 @@
+﻿빌드 시작: 2022-04-27 오후 2:55:26
+     1>2 노드의 "C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\FCU_SW\FCU_SW.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\gstreamer\1.0\msvc_x86_64\include\gstreamer-1.0" /I"D:\gstreamer\1.0\msvc_x86_64\lib\glib-2.0\include" /I"D:\gstreamer\1.0\msvc_x86_64\include\glib-2.0" /I"D:\gstreamer\1.0\msvc_x86_64\include\glib-2.0\glib" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\FCU_SW.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt SKR_CAM_View.cpp
+         SKR_CAM_View.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\Release\FCU_SW.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:D:\gstreamer\1.0\msvc_x86_64\lib "gobject-2.0.lib" "glib-2.0.lib" "gstreamer-1.0.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\Release\FCU_SW.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\Release\FCU_SW.lib" /MACHINE:X86 /SAFESEH Release\FCU_SW.res
+         Release\ClientSocket.obj
+         Release\DlgProxy.obj
+         Release\FCU_ATK_MODE_CMD.obj
+         Release\FCU_MODE_SELECT.obj
+         Release\FCU_SW.obj
+         Release\FCU_SWDlg.obj
+         Release\RecvView.obj
+         Release\SKR_CAM_View.obj
+         Release\stdafx.obj
+     1>FCU_SWDlg.obj : error LNK2001: __imp__gst_init 외부 기호를 확인할 수 없습니다.
+     1>C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\Release\FCU_SW.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+     1>"C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\FCU_SW\FCU_SW.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.91

@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FCU_SW.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FCU_SWDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgProxy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FCU_ATK_MODE_CMD.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FCU_MODE_SELECT.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FCU_Define.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSocket.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="RecvView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SKR_CAM_View.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MSL_BIT_CHK.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SKR_CAGE_CMD.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MSL_ID_CHK.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SKR_RDY_CHK.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SKR_PLC_CHK.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LOCK_ON_CMD.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SKR_TRK_STATUS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ATK_MODE_CMD.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MSL_STS_CHK.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMSL_BIT_01.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMSL_BIT_02.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMSL_BIT_03.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMSL_BIT_04.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMSL_BIT_05.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMSL_BIT_06.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMSL_BIT_07.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MSL_STS_01.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MSL_STS_02.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MSL_STS_03.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FCU_STS_Dlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CModeIO.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CSocketServer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CSocketClient.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowWarning.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FCU_SW.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FCU_SWDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgProxy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FCU_ATK_MODE_CMD.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FCU_MODE_SELECT.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientSocket.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RecvView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SKR_CAM_View.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MSL_BIT_CHK.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SKR_CAGE_CMD.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MSL_ID_CHK.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SKR_RDY_CHK.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SKR_PLC_CHK.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LOCK_ON_CMD.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SKR_TRK_STATUS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ATK_MODE_CMD.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MSL_STS_CHK.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMSL_BIT_01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMSL_BIT_02.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMSL_BIT_03.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMSL_BIT_04.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMSL_BIT_05.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMSL_BIT_06.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMSL_BIT_07.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MSL_STS_01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MSL_STS_02.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MSL_STS_03.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FCU_STS_Dlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CModeIO.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CSocketServer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CSocketClient.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowWarning.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="FCU_SW.idl">
+      <Filter>소스 파일</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FCU_SW.reg" />
+    <None Include="res\FCU_SW.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FCU_SW.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\FCU_SW.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\IMG1.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\IMG2.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\title_dryrunpng.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\test1.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (1).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (2).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (3).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (4).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (5).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (6).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (7).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (8).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (9).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (10).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (11).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_stat (12).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_title 01.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_title 02.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BRIGHTNESS_0.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BRIGHTNESS_15.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\CONTRAST_0.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\CONTRAST_15.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_0.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_15.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\WARN_CHANGE_GAS.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\WARN_ERASE_CANCEL.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\WARN_ERASE_ON.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\WARN_LNCH_FAIL.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Cam_demo.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\power.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MSLBIT_0.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MSLBIT_02.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MSLBIT_03.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MSLBIT_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MSLBIT_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MSLBIT_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_ARREST01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_ARREST02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CHKID_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CHKID_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CHKRDY_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CHKRDY_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_DESIGN_MODE_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_DESIGN_MODE_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_DESIGN_TGT_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_DESIGN_TGT_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_TRACKING_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_TRACKING_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LAUNCH_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LAUNCH_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_RDY_INJECTION_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_RDY_INJECTION_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_RDY_RELEASE_MSL_01.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_RDY_RELEASE_MSL_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SET_MSL_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SET_MSL_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_TEST_MSL_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_TEST_MSL_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_YJJ_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_YJJ_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_RDY_RELEASE_MSL_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\LED_GREEN.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\LED_RED.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\LED_WHITE.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_DOWN.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_LEFT.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_RIGHT.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_UP.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_DOWN_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_LEFT_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_RIGHT_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_UP_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCW_BTN_BATTLE_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCW_BTN_BATTLE_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCW_BTN_DRYRUN_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCW_BTN_DRYRUN_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCW_BTN_BATTLE_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCW_BTN_DRYRUN_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_RDY_INJECTION_11.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_RDY_INJECTION_12.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_RDY_RELEASE_MSL_11.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_RDY_RELEASE_MSL_12.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_YJJ_11.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_YJJ_12.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LAUNCH_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SKR_PLC_CHK_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SKR_PLC_CHK_02.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SKR_PCL_CHK_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_Re_LOCK_ON_CMD_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_Re_LOCK_ON_CMD_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_ATK_MODE_D01.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_ATK_MODE_D02.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_ATK_MODE_U01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_ATK_MODE_U02.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_ATK_MODE_D01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_ATK_MODE_D02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_ATK_MODE_U02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SKR_TRK_STATUS_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SKR_TRK_STATUS_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_CANCEL_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_CANCEL_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_POWER_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_POWER_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_MSLCON.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_PINCHK.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CUSQ_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CUSQ_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CUSQ_11.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CUSQ_12.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_CANCEL_DILG_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_CANCEL_DILG_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_CANCEL_DILG_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_CANCEL_DLG_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_CANCEL_DLG_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_CANCEL_DLG_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_EXBAT.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_THBAT.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CHMODE_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CHMODE_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_title 01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_title 02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_EQ_G.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_EQ_R.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_EQ_Y.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_FRONT.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_MSL_G.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_MSL_MONO.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_MSL_R.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_MSL_Y.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_UPPER.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_MSLCON.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_PINCHK.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\WARN_CHANGE_GAS.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\WARN_ERASE_CANCEL.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\WARN_ERASE_ON.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\WARN_LNCH_FAIL.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_0.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_15.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\led_gree.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_ABAT.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_EXTPOW.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_MBAT.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_ABAT.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_ATKMODE_A1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_ATKMODE_A2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_ATKMODE_A3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_ATKMODE_M1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_ATKMODE_M2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_ATKMODE_M3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LAUNCH_01_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LAUNCH_11.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LAUNCH_12.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LAUNCH_12_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_res_title 03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MODE_DRYRUN_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MODE_DRYRUN_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MODE_LAUNCH_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MODE_LAUNCH_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MODE_TEST_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MODE_TEST_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_SELECT_MODE.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_TCP_STAT.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_UDP_STAT.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00001.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00002.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CONNECT_TCP_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CONNECT_TCP_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CONNECT_TCP_01_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CONNECT_TCP_02_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_ARREST03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_CHKRDY_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SKR_PLC_CHK_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SKR_TRK_STATUS_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_TEST_MSL_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_HIDDEN.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_EQ_MONO.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\FCU_SW_Backup_220421\FCU_SW\res\FCU_res_stat (12).png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_TMSL_FALSE_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_TMSL_FALSE_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_TMSL_TRUE_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_TMSL_TRUE_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TEXT_MSLBIT.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_04.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_05.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_06.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_07.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_08.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_09.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_10.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_11.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_12.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_13.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\GAS_14.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00003.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SKR_IMG_CTRL_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_SKR_IMG_CTRL_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\led_red_.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00004.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00005.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS04.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS_FAIL.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS_ESC_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS_ESC_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS_ESC_03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS_ESC_04.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00006.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\btn_gree.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LNCH_MODE_START_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LNCH_MODE_START_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LNCH_MODE_STOP_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_LNCH_MODE_STOP_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MAIN_SCREEN_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MAIN_SCREEN_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_CENTER.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_CENTER_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00007.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_SKR_G.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_SKR_MONO.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_SKR_R.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_SKR_Y.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_SKR_BLACK.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00008.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MODE_ESC_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_BTN_MODE_ESC_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00009.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00010.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ico00011.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\led_whit.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS_DISCONNECT_FAIL.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS_DISCONNECT01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS_DISCONNECT02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS_DISCONNECT03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_TXT_HILS_DISCONNECT04.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_SKR_RDY_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_SKR_RDY_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_EQ_BK.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\FCU_STAT_MSL_BK.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_POWER_MBAT_01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BTN_POWER_MBAT_02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

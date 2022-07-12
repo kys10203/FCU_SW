@@ -1,0 +1,28 @@
+﻿빌드 시작: 2022-04-27 오전 11:37:03
+     1>2 노드의 "C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\FCU_SW\FCU_SW.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\gstreamer\1.0\msvc_x86_64\include\gstreamer-1.0" /I"D:\gstreamer\1.0\msvc_x86_64\lib\glib-2.0\include" /I"D:\gstreamer\1.0\msvc_x86_64\include\glib-2.0" /I"D:\gstreamer\1.0\msvc_x86_64\include\glib-2.0\glib" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\FCU_SW.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt FCU_SWDlg.cpp
+         FCU_SWDlg.cpp
+     1>d:\gstreamer\1.0\msvc_x86_64\include\glib-2.0\glib\gmacros.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>d:\gstreamer\1.0\msvc_x86_64\include\glib-2.0\glib\gmacros.h(820): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>d:\gstreamer\1.0\msvc_x86_64\include\glib-2.0\glib\gtestutils.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>c:\users\user\documents\visual studio 2012\projects\fcu_sw_backup_220426\fcu_sw\fcu_swdlg.cpp(2301): warning C4101: 'h_Icon' :참조되지 않은 지역 변수입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\Debug\FCU_SW.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\gstreamer\1.0\msvc_x86_64\lib "gobject-2.0.lib" "glib-2.0.lib" "gstreamer-1.0.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\Debug\FCU_SW.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\Debug\FCU_SW.lib" /MACHINE:X86 Debug\FCU_SW.res
+         Debug\ClientSocket.obj
+         Debug\DlgProxy.obj
+         Debug\FCU_ATK_MODE_CMD.obj
+         Debug\FCU_MODE_SELECT.obj
+         Debug\FCU_SW.obj
+         Debug\FCU_SWDlg.obj
+         Debug\RecvView.obj
+         Debug\SKR_CAM_View.obj
+         Debug\stdafx.obj
+         FCU_SW.vcxproj -> C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\Debug\FCU_SW.exe
+       RegisterOutput:
+         "C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\Debug\FCU_SW.exe" /RegServer
+     1>"C:\Users\User\Documents\Visual Studio 2012\Projects\FCU_SW_Backup_220426\FCU_SW\FCU_SW.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:04.74

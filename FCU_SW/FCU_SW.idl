@@ -1,0 +1,238 @@
+// FCU_SW.idl : FCU_SW.exe에 대한 형식 라이브러리 소스
+
+// 이 파일은 MIDL 컴파일러에 의해 처리되어
+// 형식 라이브러리(FCU_SW.tlb)를 생성합니다.
+
+#include "olectl.h"
+[ uuid(BE91D12C-A13B-42B2-8A2D-A4261133A54E), version(1.0) ]
+library FCU_SW
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CFCU_SWDoc의 기본 디스패치 인터페이스
+	
+	[ uuid(D25C2D4F-EC60-4967-BEFC-5CC7B67E80F7) ]
+	dispinterface IFCU_SW
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CFCU_SWDoc의 클래스 정보
+	
+	[ uuid(2CF26EA6-E1A0-4CFA-92C2-9B5D0219DFE5) ]
+	coclass FCU_SW
+	{
+		[default] dispinterface IFCU_SW;
+	};
+	//  FCU_ATK_MODE_CMD의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(48B1EF4E-DBB4-4B2B-838A-58A4D2EA8610) ]
+	dispinterface IFCU_ATK_MODE_CMD
+	{
+		properties:
+		methods:
+	};
+
+	//  FCU_ATK_MODE_CMD의 클래스 정보입니다.
+
+	[ uuid(4648B153-9D1C-4E9F-A924-0308518BE95F) ]
+	coclass FCU_ATK_MODE_CMD
+	{
+		[default] dispinterface IFCU_ATK_MODE_CMD;
+	};
+	//  RecvView의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(04DA761A-E2C1-44B4-A18C-5B0DA0AD9A94) ]
+	dispinterface IRecvView
+	{
+		properties:
+		methods:
+	};
+
+	//  RecvView의 클래스 정보입니다.
+
+	[ uuid(65D05345-9362-4879-B2DD-2920D59AF37E) ]
+	coclass RecvView
+	{
+		[default] dispinterface IRecvView;
+	};
+	//  MSL_BIT_CHK의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(A9AB739A-5E47-4B16-BB72-67EC59AD0F53) ]
+	dispinterface IMSL_BIT_CHK
+	{
+		properties:
+		methods:
+	};
+
+	//  MSL_BIT_CHK의 클래스 정보입니다.
+
+	[ uuid(9BD34383-5329-4414-A00F-B1401A940AB5) ]
+	coclass MSL_BIT_CHK
+	{
+		[default] dispinterface IMSL_BIT_CHK;
+	};
+	//  SKR_CAGE_CMD의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(1CB9166D-AE96-4B1D-A0F9-166CF5FB9CB0) ]
+	dispinterface ISKR_CAGE_CMD
+	{
+		properties:
+		methods:
+	};
+
+	//  SKR_CAGE_CMD의 클래스 정보입니다.
+
+	[ uuid(859CC794-E777-4388-8D6F-44C872FF1D61) ]
+	coclass SKR_CAGE_CMD
+	{
+		[default] dispinterface ISKR_CAGE_CMD;
+	};
+	//  SKR_RDY_CHK의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(F8192AB6-265B-428C-A798-6B1215CFFD06) ]
+	dispinterface ISKR_RDY_CHK
+	{
+		properties:
+		methods:
+	};
+
+	//  SKR_RDY_CHK의 클래스 정보입니다.
+
+	[ uuid(7358D754-8067-4CD7-97E7-FCAE723D131D) ]
+	coclass SKR_RDY_CHK
+	{
+		[default] dispinterface ISKR_RDY_CHK;
+	};
+	//  SKR_PLC_CHK의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(E9B16C71-49A4-4037-8B7C-26B9CD9A2748) ]
+	dispinterface ISKR_PLC_CHK
+	{
+		properties:
+		methods:
+	};
+
+	//  SKR_PLC_CHK의 클래스 정보입니다.
+
+	[ uuid(82B9F27F-2691-44B3-B39F-A9ADDDB37436) ]
+	coclass SKR_PLC_CHK
+	{
+		[default] dispinterface ISKR_PLC_CHK;
+	};
+	//  LOCK_ON_CMD의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(B123823B-465C-418D-995C-859460FE817F) ]
+	dispinterface ILOCK_ON_CMD
+	{
+		properties:
+		methods:
+	};
+
+	//  LOCK_ON_CMD의 클래스 정보입니다.
+
+	[ uuid(D172C5F0-4D99-43CD-A0DA-A77ECEFC705B) ]
+	coclass LOCK_ON_CMD
+	{
+		[default] dispinterface ILOCK_ON_CMD;
+	};
+	//  SKR_TRK_STATUS의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(873BDC63-8783-4F63-AF3D-715FDEA9E30A) ]
+	dispinterface ISKR_TRK_STATUS
+	{
+		properties:
+		methods:
+	};
+
+	//  SKR_TRK_STATUS의 클래스 정보입니다.
+
+	[ uuid(85E2A9F5-3C51-424F-9075-BF3BF22EF5ED) ]
+	coclass SKR_TRK_STATUS
+	{
+		[default] dispinterface ISKR_TRK_STATUS;
+	};
+	//  ATK_MODE_CMD의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(EACA9016-528F-43E0-A4F4-74DCAC527636) ]
+	dispinterface IATK_MODE_CMD
+	{
+		properties:
+		methods:
+	};
+
+	//  ATK_MODE_CMD의 클래스 정보입니다.
+
+	[ uuid(E61F5F4D-667B-4EE8-A66E-A5ADD3C10775) ]
+	coclass ATK_MODE_CMD
+	{
+		[default] dispinterface IATK_MODE_CMD;
+	};
+	//  MSL_STS_CHK의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(655B3638-80B2-4C05-A7FC-8A6C2FB71485) ]
+	dispinterface IMSL_STS_CHK
+	{
+		properties:
+		methods:
+	};
+
+	//  MSL_STS_CHK의 클래스 정보입니다.
+
+	[ uuid(B62A06B7-1711-4387-BDE3-A68CB8B60988) ]
+	coclass MSL_STS_CHK
+	{
+		[default] dispinterface IMSL_STS_CHK;
+	};
+	//  LIFTOFF_RDY_CMD의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(34890301-9330-45D1-899D-F36DA851E121) ]
+	dispinterface ILIFTOFF_RDY_CMD
+	{
+		properties:
+		methods:
+	};
+
+	//  LIFTOFF_RDY_CMD의 클래스 정보입니다.
+
+	[ uuid(F8056AE6-1658-4DBF-87F8-FD0ED0780703) ]
+	coclass LIFTOFF_RDY_CMD
+	{
+		[default] dispinterface ILIFTOFF_RDY_CMD;
+	};
+	//  PINSQ의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(B58E4D17-E843-4C5A-AF85-708C5FD2D66C) ]
+	dispinterface IPINSQ
+	{
+		properties:
+		methods:
+	};
+
+	//  PINSQ의 클래스 정보입니다.
+
+	[ uuid(AD08936E-35FD-42C3-B4D5-CCEADCE8C73F) ]
+	coclass PINSQ
+	{
+		[default] dispinterface IPINSQ;
+	};
+	//  EMSQ의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(2349ACB6-98A9-4263-B124-D56986E6A729) ]
+	dispinterface IEMSQ
+	{
+		properties:
+		methods:
+	};
+
+	//  EMSQ의 클래스 정보입니다.
+
+	[ uuid(948FB563-82D9-467F-B3E2-16D136D78812) ]
+	coclass EMSQ
+	{
+		[default] dispinterface IEMSQ;
+	};
+};

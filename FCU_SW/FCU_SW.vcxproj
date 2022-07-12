@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6B74FE8B-AFDC-41D9-8034-C9A75845A9D6}</ProjectGuid>
+    <RootNamespace>FCU_SW</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\gstreamer\1.0\msvc_x86_64\include\gstreamer-1.0;D:\gstreamer\1.0\msvc_x86_64\lib\glib-2.0\include;D:\gstreamer\1.0\msvc_x86_64\include\glib-2.0;D:\gstreamer\1.0\msvc_x86_64\include\glib-2.0\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RegisterOutput>true</RegisterOutput>
+      <AdditionalLibraryDirectories>D:\gstreamer\1.0\msvc_x86_64\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gobject-2.0.lib;glib-2.0.lib;gstreamer-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)FCU_SW.tlb</TypeLibraryName>
+      <HeaderFileName>FCU_SW_h.h</HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\opencv\build\include;D:\gstreamer\1.0\msvc_x86_64\include\gstreamer-1.0;D:\gstreamer\1.0\msvc_x86_64\lib\glib-2.0\include;D:\gstreamer\1.0\msvc_x86_64\include\glib-2.0;D:\gstreamer\1.0\msvc_x86_64\include\glib-2.0\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RegisterOutput>true</RegisterOutput>
+      <AdditionalLibraryDirectories>C:\opencv\build\x64\vc14\lib;D:\gstreamer\1.0\msvc_x86_64\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world341d.lib;%(AdditionalDependencies);gobject-2.0.lib;glib-2.0.lib;gstreamer-1.0.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)FCU_SW.tlb</TypeLibraryName>
+      <HeaderFileName>FCU_SW_h.h</HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\gstreamer\1.0\msvc_x86_64\include\gstreamer-1.0;D:\gstreamer\1.0\msvc_x86_64\lib\glib-2.0\include;D:\gstreamer\1.0\msvc_x86_64\include\glib-2.0;D:\gstreamer\1.0\msvc_x86_64\include\glib-2.0\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RegisterOutput>true</RegisterOutput>
+      <AdditionalLibraryDirectories>D:\gstreamer\1.0\msvc_x86_64\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gobject-2.0.lib;glib-2.0.lib;gstreamer-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)FCU_SW.tlb</TypeLibraryName>
+      <HeaderFileName>FCU_SW_h.h</HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\opencv\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RegisterOutput>true</RegisterOutput>
+      <AdditionalLibraryDirectories>C:\opencv\build\install\x64\vc17\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core455.lib;opencv_videoio455.lib;opencv_video455.lib;opencv_highgui455.lib;opencv_imgproc455.lib;opencv_objdetect455.lib;opencv_imgcodecs455.lib;opencv_face455.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)FCU_SW.tlb</TypeLibraryName>
+      <HeaderFileName>FCU_SW_h.h</HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ATK_MODE_CMD.h" />
+    <ClInclude Include="ClientSocket.h" />
+    <ClInclude Include="CModeIO.h" />
+    <ClInclude Include="CSocketClient.h" />
+    <ClInclude Include="CSocketServer.h" />
+    <ClInclude Include="DlgMSL_BIT_01.h" />
+    <ClInclude Include="DlgMSL_BIT_02.h" />
+    <ClInclude Include="DlgMSL_BIT_03.h" />
+    <ClInclude Include="DlgMSL_BIT_04.h" />
+    <ClInclude Include="DlgMSL_BIT_05.h" />
+    <ClInclude Include="DlgMSL_BIT_06.h" />
+    <ClInclude Include="DlgMSL_BIT_07.h" />
+    <ClInclude Include="DlgProxy.h" />
+    <ClInclude Include="FCU_ATK_MODE_CMD.h" />
+    <ClInclude Include="FCU_Define.h" />
+    <ClInclude Include="FCU_MODE_SELECT.h" />
+    <ClInclude Include="FCU_STS_Dlg.h" />
+    <ClInclude Include="FCU_SW.h" />
+    <ClInclude Include="FCU_SWDlg.h" />
+    <ClInclude Include="LOCK_ON_CMD.h" />
+    <ClInclude Include="MSL_BIT_CHK.h" />
+    <ClInclude Include="MSL_ID_CHK.h" />
+    <ClInclude Include="MSL_STS_01.h" />
+    <ClInclude Include="MSL_STS_02.h" />
+    <ClInclude Include="MSL_STS_03.h" />
+    <ClInclude Include="MSL_STS_CHK.h" />
+    <ClInclude Include="RecvView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ShowWarning.h" />
+    <ClInclude Include="SKR_CAGE_CMD.h" />
+    <ClInclude Include="SKR_CAM_View.h" />
+    <ClInclude Include="SKR_PLC_CHK.h" />
+    <ClInclude Include="SKR_RDY_CHK.h" />
+    <ClInclude Include="SKR_TRK_STATUS.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ATK_MODE_CMD.cpp" />
+    <ClCompile Include="ClientSocket.cpp" />
+    <ClCompile Include="CModeIO.cpp" />
+    <ClCompile Include="CSocketClient.cpp" />
+    <ClCompile Include="CSocketServer.cpp" />
+    <ClCompile Include="DlgMSL_BIT_01.cpp" />
+    <ClCompile Include="DlgMSL_BIT_02.cpp" />
+    <ClCompile Include="DlgMSL_BIT_03.cpp" />
+    <ClCompile Include="DlgMSL_BIT_04.cpp" />
+    <ClCompile Include="DlgMSL_BIT_05.cpp" />
+    <ClCompile Include="DlgMSL_BIT_06.cpp" />
+    <ClCompile Include="DlgMSL_BIT_07.cpp" />
+    <ClCompile Include="DlgProxy.cpp" />
+    <ClCompile Include="FCU_ATK_MODE_CMD.cpp" />
+    <ClCompile Include="FCU_MODE_SELECT.cpp" />
+    <ClCompile Include="FCU_STS_Dlg.cpp" />
+    <ClCompile Include="FCU_SW.cpp" />
+    <ClCompile Include="FCU_SWDlg.cpp" />
+    <ClCompile Include="LOCK_ON_CMD.cpp" />
+    <ClCompile Include="MSL_BIT_CHK.cpp" />
+    <ClCompile Include="MSL_ID_CHK.cpp" />
+    <ClCompile Include="MSL_STS_01.cpp" />
+    <ClCompile Include="MSL_STS_02.cpp" />
+    <ClCompile Include="MSL_STS_03.cpp" />
+    <ClCompile Include="MSL_STS_CHK.cpp" />
+    <ClCompile Include="RecvView.cpp" />
+    <ClCompile Include="ShowWarning.cpp" />
+    <ClCompile Include="SKR_CAGE_CMD.cpp" />
+    <ClCompile Include="SKR_CAM_View.cpp" />
+    <ClCompile Include="SKR_PLC_CHK.cpp" />
+    <ClCompile Include="SKR_RDY_CHK.cpp" />
+    <ClCompile Include="SKR_TRK_STATUS.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="FCU_SW.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FCU_SW.reg" />
+    <None Include="res\FCU_SW.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FCU_SW.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\FCU_SW_Backup_220421\FCU_SW\res\FCU_res_stat (12).png" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\BRIGHTNESS_0.png" />
+    <Image Include="res\BRIGHTNESS_15.png" />
+    <Image Include="res\BTN_ATKMODE_A1.bmp" />
+    <Image Include="res\BTN_ATKMODE_A2.bmp" />
+    <Image Include="res\BTN_ATKMODE_A3.bmp" />
+    <Image Include="res\BTN_ATKMODE_M1.bmp" />
+    <Image Include="res\BTN_ATKMODE_M2.bmp" />
+    <Image Include="res\BTN_ATKMODE_M3.bmp" />
+    <Image Include="res\BTN_CANCEL_01.bmp" />
+    <Image Include="res\BTN_CANCEL_02.bmp" />
+    <Image Include="res\BTN_CANCEL_DILG_01.bmp" />
+    <Image Include="res\BTN_CANCEL_DILG_02.bmp" />
+    <Image Include="res\BTN_CANCEL_DILG_03.bmp" />
+    <Image Include="res\BTN_CANCEL_DLG_01.bmp" />
+    <Image Include="res\BTN_CANCEL_DLG_02.bmp" />
+    <Image Include="res\BTN_CANCEL_DLG_03.bmp" />
+    <Image Include="res\BTN_CENTER.bmp" />
+    <Image Include="res\BTN_CENTER_02.bmp" />
+    <Image Include="res\BTN_DOWN.bmp" />
+    <Image Include="res\BTN_DOWN_02.bmp" />
+    <Image Include="res\btn_gree.ico" />
+    <Image Include="res\BTN_LEFT.bmp" />
+    <Image Include="res\BTN_LEFT_02.bmp" />
+    <Image Include="res\BTN_POWER_01.bmp" />
+    <Image Include="res\BTN_POWER_02.bmp" />
+    <Image Include="res\BTN_POWER_MBAT_01.bmp" />
+    <Image Include="res\BTN_POWER_MBAT_02.bmp" />
+    <Image Include="res\BTN_RIGHT.bmp" />
+    <Image Include="res\BTN_RIGHT_02.bmp" />
+    <Image Include="res\BTN_UP.bmp" />
+    <Image Include="res\BTN_UP_02.bmp" />
+    <Image Include="res\Cam_demo.bmp" />
+    <Image Include="res\CONTRAST_0.png" />
+    <Image Include="res\CONTRAST_15.png" />
+    <Image Include="res\FCU_BTN_ARREST01.bmp" />
+    <Image Include="res\FCU_BTN_ARREST02.bmp" />
+    <Image Include="res\FCU_BTN_ARREST03.bmp" />
+    <Image Include="res\FCU_BTN_ATK_MODE_D01.bmp" />
+    <Image Include="res\FCU_BTN_ATK_MODE_D01.png" />
+    <Image Include="res\FCU_BTN_ATK_MODE_D02.bmp" />
+    <Image Include="res\FCU_BTN_ATK_MODE_D02.png" />
+    <Image Include="res\FCU_BTN_ATK_MODE_U01.bmp" />
+    <Image Include="res\FCU_BTN_ATK_MODE_U02.bmp" />
+    <Image Include="res\FCU_BTN_ATK_MODE_U02.png" />
+    <Image Include="res\FCU_BTN_CHKID_01.bmp" />
+    <Image Include="res\FCU_BTN_CHKID_02.bmp" />
+    <Image Include="res\FCU_BTN_CHKRDY_01.bmp" />
+    <Image Include="res\FCU_BTN_CHKRDY_02.bmp" />
+    <Image Include="res\FCU_BTN_CHKRDY_03.bmp" />
+    <Image Include="res\FCU_BTN_CHMODE_01.bmp" />
+    <Image Include="res\FCU_BTN_CHMODE_02.bmp" />
+    <Image Include="res\FCU_BTN_CONNECT_TCP_01.bmp" />
+    <Image Include="res\FCU_BTN_CONNECT_TCP_01_2.bmp" />
+    <Image Include="res\FCU_BTN_CONNECT_TCP_02.bmp" />
+    <Image Include="res\FCU_BTN_CONNECT_TCP_02_2.bmp" />
+    <Image Include="res\FCU_BTN_CUSQ_01.bmp" />
+    <Image Include="res\FCU_BTN_CUSQ_02.bmp" />
+    <Image Include="res\FCU_BTN_CUSQ_11.bmp" />
+    <Image Include="res\FCU_BTN_CUSQ_12.bmp" />
+    <Image Include="res\FCU_BTN_DESIGN_MODE_01.bmp" />
+    <Image Include="res\FCU_BTN_DESIGN_MODE_02.bmp" />
+    <Image Include="res\FCU_BTN_DESIGN_TGT_01.bmp" />
+    <Image Include="res\FCU_BTN_DESIGN_TGT_02.bmp" />
+    <Image Include="res\FCU_BTN_HIDDEN.bmp" />
+    <Image Include="res\FCU_BTN_LAUNCH_01.bmp" />
+    <Image Include="res\FCU_BTN_LAUNCH_01_1.bmp" />
+    <Image Include="res\FCU_BTN_LAUNCH_02.bmp" />
+    <Image Include="res\FCU_BTN_LAUNCH_03.bmp" />
+    <Image Include="res\FCU_BTN_LAUNCH_11.bmp" />
+    <Image Include="res\FCU_BTN_LAUNCH_12.bmp" />
+    <Image Include="res\FCU_BTN_LAUNCH_12_1.bmp" />
+    <Image Include="res\FCU_BTN_LNCH_MODE_START_01.bmp" />
+    <Image Include="res\FCU_BTN_LNCH_MODE_START_02.bmp" />
+    <Image Include="res\FCU_BTN_LNCH_MODE_STOP_01.bmp" />
+    <Image Include="res\FCU_BTN_LNCH_MODE_STOP_02.bmp" />
+    <Image Include="res\FCU_BTN_MAIN_SCREEN_01.bmp" />
+    <Image Include="res\FCU_BTN_MAIN_SCREEN_02.bmp" />
+    <Image Include="res\FCU_BTN_MODE_DRYRUN_01.bmp" />
+    <Image Include="res\FCU_BTN_MODE_DRYRUN_02.bmp" />
+    <Image Include="res\FCU_BTN_MODE_ESC_01.bmp" />
+    <Image Include="res\FCU_BTN_MODE_ESC_02.bmp" />
+    <Image Include="res\FCU_BTN_MODE_LAUNCH_01.bmp" />
+    <Image Include="res\FCU_BTN_MODE_LAUNCH_02.bmp" />
+    <Image Include="res\FCU_BTN_MODE_TEST_01.bmp" />
+    <Image Include="res\FCU_BTN_MODE_TEST_02.bmp" />
+    <Image Include="res\FCU_BTN_MSLBIT_0.png" />
+    <Image Include="res\FCU_BTN_MSLBIT_01.bmp" />
+    <Image Include="res\FCU_BTN_MSLBIT_02.bmp" />
+    <Image Include="res\FCU_BTN_MSLBIT_02.png" />
+    <Image Include="res\FCU_BTN_MSLBIT_03.bmp" />
+    <Image Include="res\FCU_BTN_MSLBIT_03.png" />
+    <Image Include="res\FCU_BTN_RDY_INJECTION_01.bmp" />
+    <Image Include="res\FCU_BTN_RDY_INJECTION_02.bmp" />
+    <Image Include="res\FCU_BTN_RDY_INJECTION_11.bmp" />
+    <Image Include="res\FCU_BTN_RDY_INJECTION_12.bmp" />
+    <Image Include="res\FCU_BTN_RDY_RELEASE_MSL_01.bmp" />
+    <Image Include="res\FCU_BTN_RDY_RELEASE_MSL_01.png" />
+    <Image Include="res\FCU_BTN_RDY_RELEASE_MSL_02.bmp" />
+    <Image Include="res\FCU_BTN_RDY_RELEASE_MSL_11.bmp" />
+    <Image Include="res\FCU_BTN_RDY_RELEASE_MSL_12.bmp" />
+    <Image Include="res\FCU_BTN_Re_LOCK_ON_CMD_01.bmp" />
+    <Image Include="res\FCU_BTN_Re_LOCK_ON_CMD_02.bmp" />
+    <Image Include="res\FCU_BTN_SET_MSL_01.bmp" />
+    <Image Include="res\FCU_BTN_SET_MSL_02.bmp" />
+    <Image Include="res\FCU_BTN_SKR_IMG_CTRL_01.bmp" />
+    <Image Include="res\FCU_BTN_SKR_IMG_CTRL_02.bmp" />
+    <Image Include="res\FCU_BTN_SKR_PCL_CHK_02.bmp" />
+    <Image Include="res\FCU_BTN_SKR_PLC_CHK_01.bmp" />
+    <Image Include="res\FCU_BTN_SKR_PLC_CHK_02.png" />
+    <Image Include="res\FCU_BTN_SKR_PLC_CHK_03.bmp" />
+    <Image Include="res\FCU_BTN_SKR_TRK_STATUS_01.bmp" />
+    <Image Include="res\FCU_BTN_SKR_TRK_STATUS_02.bmp" />
+    <Image Include="res\FCU_BTN_SKR_TRK_STATUS_03.bmp" />
+    <Image Include="res\FCU_BTN_TEST_MSL_01.bmp" />
+    <Image Include="res\FCU_BTN_TEST_MSL_02.bmp" />
+    <Image Include="res\FCU_BTN_TEST_MSL_03.bmp" />
+    <Image Include="res\FCU_BTN_TMSL_FALSE_01.bmp" />
+    <Image Include="res\FCU_BTN_TMSL_FALSE_02.bmp" />
+    <Image Include="res\FCU_BTN_TMSL_TRUE_01.bmp" />
+    <Image Include="res\FCU_BTN_TMSL_TRUE_02.bmp" />
+    <Image Include="res\FCU_BTN_TRACKING_01.bmp" />
+    <Image Include="res\FCU_BTN_TRACKING_02.bmp" />
+    <Image Include="res\FCU_BTN_YJJ_01.bmp" />
+    <Image Include="res\FCU_BTN_YJJ_02.bmp" />
+    <Image Include="res\FCU_BTN_YJJ_11.bmp" />
+    <Image Include="res\FCU_BTN_YJJ_12.bmp" />
+    <Image Include="res\FCU_res_stat (1).png" />
+    <Image Include="res\FCU_res_stat (10).png" />
+    <Image Include="res\FCU_res_stat (11).png" />
+    <Image Include="res\FCU_res_stat (12).png" />
+    <Image Include="res\FCU_res_stat (2).png" />
+    <Image Include="res\FCU_res_stat (3).png" />
+    <Image Include="res\FCU_res_stat (4).png" />
+    <Image Include="res\FCU_res_stat (5).png" />
+    <Image Include="res\FCU_res_stat (6).png" />
+    <Image Include="res\FCU_res_stat (7).png" />
+    <Image Include="res\FCU_res_stat (8).png" />
+    <Image Include="res\FCU_res_stat (9).png" />
+    <Image Include="res\FCU_res_title 01.bmp" />
+    <Image Include="res\FCU_res_title 01.png" />
+    <Image Include="res\FCU_res_title 02.bmp" />
+    <Image Include="res\FCU_res_title 02.png" />
+    <Image Include="res\FCU_res_title 03.bmp" />
+    <Image Include="res\FCU_SKR_RDY_01.bmp" />
+    <Image Include="res\FCU_SKR_RDY_02.bmp" />
+    <Image Include="res\FCU_STAT_EQ_BK.bmp" />
+    <Image Include="res\FCU_STAT_EQ_G.bmp" />
+    <Image Include="res\FCU_STAT_EQ_MONO.bmp" />
+    <Image Include="res\FCU_STAT_EQ_R.bmp" />
+    <Image Include="res\FCU_STAT_EQ_Y.bmp" />
+    <Image Include="res\FCU_STAT_FRONT.bmp" />
+    <Image Include="res\FCU_STAT_MSL_BK.bmp" />
+    <Image Include="res\FCU_STAT_MSL_G.bmp" />
+    <Image Include="res\FCU_STAT_MSL_MONO.bmp" />
+    <Image Include="res\FCU_STAT_MSL_R.bmp" />
+    <Image Include="res\FCU_STAT_MSL_Y.bmp" />
+    <Image Include="res\FCU_STAT_SKR_BLACK.bmp" />
+    <Image Include="res\FCU_STAT_SKR_G.bmp" />
+    <Image Include="res\FCU_STAT_SKR_MONO.bmp" />
+    <Image Include="res\FCU_STAT_SKR_R.bmp" />
+    <Image Include="res\FCU_STAT_SKR_Y.bmp" />
+    <Image Include="res\FCU_STAT_UPPER.bmp" />
+    <Image Include="res\FCU_SW.ico" />
+    <Image Include="res\FCU_TEXT_ABAT.bmp" />
+    <Image Include="res\FCU_TEXT_ABAT.png" />
+    <Image Include="res\FCU_TEXT_EXTPOW.bmp" />
+    <Image Include="res\FCU_TEXT_MBAT.bmp" />
+    <Image Include="res\FCU_TEXT_MSLBIT.bmp" />
+    <Image Include="res\FCU_TEXT_MSLCON.bmp" />
+    <Image Include="res\FCU_TEXT_MSLCON.png" />
+    <Image Include="res\FCU_TEXT_PINCHK.bmp" />
+    <Image Include="res\FCU_TEXT_PINCHK.png" />
+    <Image Include="res\FCU_TEXT_TCP_STAT.bmp" />
+    <Image Include="res\FCU_TEXT_UDP_STAT.bmp" />
+    <Image Include="res\FCU_TXT_EXBAT.bmp" />
+    <Image Include="res\FCU_TXT_HILS01.bmp" />
+    <Image Include="res\FCU_TXT_HILS02.bmp" />
+    <Image Include="res\FCU_TXT_HILS03.bmp" />
+    <Image Include="res\FCU_TXT_HILS04.bmp" />
+    <Image Include="res\FCU_TXT_HILS_DISCONNECT01.bmp" />
+    <Image Include="res\FCU_TXT_HILS_DISCONNECT02.bmp" />
+    <Image Include="res\FCU_TXT_HILS_DISCONNECT03.bmp" />
+    <Image Include="res\FCU_TXT_HILS_DISCONNECT04.bmp" />
+    <Image Include="res\FCU_TXT_HILS_DISCONNECT_FAIL.bmp" />
+    <Image Include="res\FCU_TXT_HILS_ESC_01.bmp" />
+    <Image Include="res\FCU_TXT_HILS_ESC_02.bmp" />
+    <Image Include="res\FCU_TXT_HILS_ESC_03.bmp" />
+    <Image Include="res\FCU_TXT_HILS_ESC_04.bmp" />
+    <Image Include="res\FCU_TXT_HILS_FAIL.bmp" />
+    <Image Include="res\FCU_TXT_SELECT_MODE.bmp" />
+    <Image Include="res\FCU_TXT_THBAT.bmp" />
+    <Image Include="res\FCW_BTN_BATTLE_01.bmp" />
+    <Image Include="res\FCW_BTN_BATTLE_02.bmp" />
+    <Image Include="res\FCW_BTN_BATTLE_03.bmp" />
+    <Image Include="res\FCW_BTN_DRYRUN_01.bmp" />
+    <Image Include="res\FCW_BTN_DRYRUN_02.bmp" />
+    <Image Include="res\FCW_BTN_DRYRUN_03.bmp" />
+    <Image Include="res\GAS_0.bmp" />
+    <Image Include="res\GAS_0.png" />
+    <Image Include="res\GAS_01.bmp" />
+    <Image Include="res\GAS_02.bmp" />
+    <Image Include="res\GAS_03.bmp" />
+    <Image Include="res\GAS_04.bmp" />
+    <Image Include="res\GAS_05.bmp" />
+    <Image Include="res\GAS_06.bmp" />
+    <Image Include="res\GAS_07.bmp" />
+    <Image Include="res\GAS_08.bmp" />
+    <Image Include="res\GAS_09.bmp" />
+    <Image Include="res\GAS_10.bmp" />
+    <Image Include="res\GAS_11.bmp" />
+    <Image Include="res\GAS_12.bmp" />
+    <Image Include="res\GAS_13.bmp" />
+    <Image Include="res\GAS_14.bmp" />
+    <Image Include="res\GAS_15.bmp" />
+    <Image Include="res\GAS_15.png" />
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\ico00002.ico" />
+    <Image Include="res\ico00003.ico" />
+    <Image Include="res\ico00004.ico" />
+    <Image Include="res\ico00005.ico" />
+    <Image Include="res\ico00006.ico" />
+    <Image Include="res\ico00007.ico" />
+    <Image Include="res\ico00008.ico" />
+    <Image Include="res\ico00009.ico" />
+    <Image Include="res\ico00010.ico" />
+    <Image Include="res\ico00011.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\IMG1.png" />
+    <Image Include="res\IMG2.png" />
+    <Image Include="res\led_gree.ico" />
+    <Image Include="res\LED_GREEN.ico" />
+    <Image Include="res\LED_RED.ico" />
+    <Image Include="res\led_red_.ico" />
+    <Image Include="res\led_whit.ico" />
+    <Image Include="res\LED_WHITE.ico" />
+    <Image Include="res\power.bmp" />
+    <Image Include="res\test1.png" />
+    <Image Include="res\title_dryrunpng.png" />
+    <Image Include="res\WARN_CHANGE_GAS.bmp" />
+    <Image Include="res\WARN_CHANGE_GAS.png" />
+    <Image Include="res\WARN_ERASE_CANCEL.bmp" />
+    <Image Include="res\WARN_ERASE_CANCEL.png" />
+    <Image Include="res\WARN_ERASE_ON.bmp" />
+    <Image Include="res\WARN_ERASE_ON.png" />
+    <Image Include="res\WARN_LNCH_FAIL.bmp" />
+    <Image Include="res\WARN_LNCH_FAIL.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="FCU_SW.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
